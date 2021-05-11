@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #6dc6bc;
+}
+
+.top {
+  position: relative;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+nav {
+  position: absolute;
+  top: 20px;
+  left: 10%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brandname {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.brandname span {
+  font-weight: 300;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 30px;
+  color: #151515;
+  z-index: 6;
+  text-transform: uppercase;
+}
+
+.hide {
+  display: none;
+}
+
+.sun {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  width: 150px;
+  animation: sunRotate 20s infinite linear;
+}
+
+.cloud1 {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 300px;
+  z-index: 3;
+}
+
+.cloud2 {
+  position: absolute;
+  top: 250px;
+  left: 500px;
+  width: 200px;
+  z-index: 3;
+}
+
+.cloud3 {
+  position: absolute;
+  top: 50px;
+  right: 400px;
+  width: 150px;
+  z-index: 3;
+}
+
+.cloud4 {
+  position: absolute;
+  top: 150px;
+  right: 100px;
+  width: 150px;
+  z-index: 3;
+}
+
+.lighthouse {
+  height: 400px;
+  position: absolute;
+  bottom: 130px;
+  right: 25%;
+  z-index: 10;
+}
+
+.beach {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  z-index: 2;
+}
+
+.hill1 {
+  position: absolute;
+  height: 120px;
+  bottom: 149px;
+  left: 300px;
+  z-index: 4;
+}
+
+.hill2 {
+  position: absolute;
+  height: 100px;
+  bottom: 149px;
+  left: 0;
+  z-index: 3;
+}
+
+.hill4 {
+  position: absolute;
+  height: 50px;
+  bottom: 149px;
+  right: 0;
+  z-index: 5;
+}
+
+.hill5 {
+  position: absolute;
+  height: 70px;
+  bottom: 149px;
+  left: 200px;
+  z-index: 5;
+}
+
+.hill6 {
+  position: absolute;
+  height: 100px;
+  bottom: 149px;
+  right: 0;
+  z-index: 2;
+}
+
+.ocean-wave {
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 150px;
+  background-color: #0595e369;
+}
+
+.wave {
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 200%;
+  height: 200px;
+  background-repeat: repeat no-repeat;
+  background-position: -8px bottom;
+  transform-origin: center bottom;
+  z-index: 3;
+}
+
+.wave1 {
+  background-size: 50% 100px;
+  background-image: url('img/wave1.png');
+  animation: waves 15s linear infinite;
+  opacity: 60%;
+}
+
+.wave2 {
+  background-size: 50% 150px;
+  background-image: url('img/wave2.png');
+  opacity: 40%;
+  animation: waves 25s linear infinite;
+}
+
+.wave3 {
+  background-size: 50% 200px;
+  background-image: url('img/wave3.png');
+  opacity: 50%;
+  animation: waves 15s linear infinite;
+}
+
+@keyframes sunRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes waves {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(0.7);
+  }
+  100% {
+    transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+
+#ocean {
+  background-color: #0595e3;
+  position: relative;
+}
+
+.ocean {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ocean-floor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-image: url('img/beach.png');
+  opacity: 70%;
+}
+
+.seaweed {
+  position: absolute;
+  bottom: 30px;
+  height: 200px;
+  opacity: 90%;
+  z-index: 2;
+}
+
+.seaweed1 {
+  right: 55%;
+}
+
+.seaweed2 {
+  right: 5%;
+}
+
+.shark {
+  position: absolute;
+  opacity: 90%;
+  bottom: 100px;
+  right: -350px;
+  width: 300px;
+}
+
+.crab {
+  position: absolute;
+  opacity: 90%;
+  bottom: 40px;
+  width: 80px;
+}
+
+.crab {
+  left: 100px;
+}
+
+.crab2 {
+  left: 200px;
+}
+
+.oyster {
+  position: absolute;
+  opacity: 90%;
+  bottom: 20px;
+  right: 30%;
+  width: 80px;
+}
+
+.fish {
+  position: absolute;
+  opacity: 90%;
+}
+
+.fish1 {
+  bottom: 200px;
+  left: 50px;
+  width: 50px;
+}
+
+.fish2 {
+  bottom: 150px;
+  left: 60%;
+  width: 50px;
+}
+
+.fish3 {
+  bottom: 50%;
+  right: -300px;
+  width: 100px;
+}
+
+.fish4 {
+  bottom: 80%;
+  left: 200px;
+}
+
+.fish5 {
+  bottom: 60%;
+  left: unset;
+  right: 50px;
+}
+
+.fish6 {
+  bottom: 300px;
+  left: 600px;
+  right: unset;
+}
+
+.fish7 {
+  bottom: 50%;
+  left: 30%;
+  right: unset;
+}
+
+.fish8 {
+  bottom: unset;
+  top: 10%;
+  right: 30%;
+  left: unset;
+}
+
+.fish9 {
+  bottom: 300px;
+  right: 20%;
+  left: unset;
+}
+
+.fish10 {
+  bottom: 70%;
+}
+
+.fish11 {
+  bottom: 30%;
+  left: 40%;
+}
